@@ -93,7 +93,6 @@ export default function LandingPage() {
             </tr>
           </tbody>
         </table>
-
         <div style={{ marginTop: 12 }}>
           <button type="submit">Submit</button>
         </div>

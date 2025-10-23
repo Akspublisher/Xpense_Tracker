@@ -33,7 +33,6 @@ const expenseSlice = createSlice({
     resetAllExpense() {
       return initialState;
     },
-    
   },
 });
 

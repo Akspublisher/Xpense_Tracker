@@ -20,12 +20,11 @@ const [filter, setFilter] = useState("all");
     if (!txn) return;
     if (confirm("Delete this expense?")) {
       dispatch(removeTransactionEntry(id));
-      // subtract from totals
+      // subtract from total
       dispatch(updateTotalExpense({ amount: txn.amount, operation: "sub" }));
       dispatch(updateCategoricalExpense({ category: txn.category, amount: -Number(txn.amount) }));
     }
   };
-
   return (
     <div style={{ marginTop: 20 }}>
        <hr /><br/>

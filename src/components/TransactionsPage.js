@@ -4,7 +4,6 @@ import Insights from './Insights';
 import NewExpenseForm from './NewExpenseForm';
 import ExpensesTable from './ExpenseTable';
 import { useDispatch } from 'react-redux';
-
 const TransactionsPage = () => {
 const [showModal, setShowModal] = useState(false);
 const dispatch = useDispatch();

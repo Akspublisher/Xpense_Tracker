@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const currency = (x) => `Rs ${Number(x || 0).toFixed(2)}`;
-
 export default function Insights() {
   const budgets = useSelector((s) => s.user.categoricalBudget);
   
@@ -38,7 +37,6 @@ export default function Insights() {
                 <td>{(allocated)}</td>
                 <td>{(current)}</td>
                 <td>{(balance)}</td>
-                
               </tr>
             );
           })}

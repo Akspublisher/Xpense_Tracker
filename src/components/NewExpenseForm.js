@@ -82,7 +82,6 @@ if (!confirmAdd) return;
           </select>
           
         </div>
-
         <div>
           <br />
           <label htmlFor="expense-amount">Expense Amount:</label>

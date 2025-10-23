@@ -5,6 +5,7 @@ import userReducer from "./userSlice";
 import expenseReducer from "./expenseSlice";
 import transactionReducer from "./transactionSlice"; // ✅ singular
 
+
 const store = configureStore({
   reducer: {
     user: userReducer,

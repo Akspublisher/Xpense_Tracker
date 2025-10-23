@@ -84,7 +84,6 @@ export default function Header({ onUpdateClick }) {
   const userName = useSelector((s) => s.user.userName);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
 
   return (
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>

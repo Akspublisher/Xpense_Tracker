@@ -32,6 +32,7 @@ const userSlice = createSlice({
       state.activeFilter = action.payload;
     },
    
+    
     resetAllBudget: () => ({
       userName: "",
       monthlyBudget: "",

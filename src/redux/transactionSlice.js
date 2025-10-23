@@ -4,6 +4,7 @@ const initialState = {
   transactionList: [],
 };
 
+
 const transactionSlice = createSlice({
   name: "transactions",
   initialState,
