@@ -1,12 +1,20 @@
-// DO NOT TOUCH THE BELOW LINE
 import reportWebVitals from "./reportWebVitals";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import App from "./App";
+import store from "./redux/store"
 
-// DO NOT TOUCH THE BELOW 3 LINES
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 if (window.Cypress) {
-  window.store = store;
+  window.store = store; // ✅ make Redux store accessible to Cypress
 }
 
-// WRITE YOUR CODE HERE
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
-// DO NOT TOUCH THE BELOW LINE
 reportWebVitals();

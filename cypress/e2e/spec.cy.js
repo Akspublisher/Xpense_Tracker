@@ -1,8 +1,8 @@
-import store from "../../src/redux/Store";
+import store from "../../src/redux/store";
 
 describe("LandingPageForm Initial State Tests", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000/");
+    cy.visit("http://localhost:8082/");
   });
 
   it("should display initial state correctly", () => {
@@ -103,7 +103,7 @@ describe("LandingPageForm Initial State Tests", () => {
 
 describe("ExpenseForm", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000/"); // Adjust the path to where your component is rendered
+    cy.visit("http://localhost:8082/"); // Adjust the path to where your component is rendered
   });
 
   it("should render the form", () => {
