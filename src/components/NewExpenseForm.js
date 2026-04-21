@@ -13,7 +13,7 @@ export default function NewExpenseForm() {
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-
+  console.log(successMessage);
   const currentSpent = (cat) =>
     expenses.filter((e) => e.category === cat).reduce((acc, e) => acc + Number(e.amount), 0);
 
