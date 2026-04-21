@@ -13,7 +13,7 @@ import { resetAllBudget } from "../redux/userSlice";
 import { removeAllTransactions } from "../redux/transactionSlice";
 import { resetAllExpense } from "../redux/expenseSlice";
 import { useNavigate } from "react-router-dom";
-
+console.log(resetAllExpense);
 
 export default function TrackerPage() {
   const user = useSelector((s) => s.user);
