@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const currency = (x) => `Rs ${Number(x || 0).toFixed(2)}`;
 export default function Insights() {
   const budgets = useSelector((s) => s.user.categoricalBudget);
-  
+  console.log(currency);
   const expenses = useSelector((s) => s.transactions.transactionList);
   const cats = ["totalExpense","food", "travel", "entertainment", "others"];
 
