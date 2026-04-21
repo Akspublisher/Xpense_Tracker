@@ -8,7 +8,7 @@ import {
 } from "../redux/userSlice";
 import { removeAllTransactions } from "../redux/transactionSlice";
 import { useNavigate } from "react-router-dom";
-
+console.log(removeAllTransactions,resetAllBudget)
 export default function LandingPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
