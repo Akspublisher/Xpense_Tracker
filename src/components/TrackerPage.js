@@ -34,7 +34,7 @@ export default function TrackerPage() {
   const [confirmReset, setConfirmReset] = useState(false);
 
   const dispatch = useDispatch();
-
+ console.log(confirmReset,setConfirmReset,userName,monthlyBudget,categoricalBudget)
   const openUpdate = () => setShowUpdate(true);
   const closeUpdate = () => setShowUpdate(false);
   const navigate = useNavigate();
